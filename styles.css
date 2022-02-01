@@ -1,0 +1,28 @@
+span,
+a,
+p,
+td {
+	vertical-align: top;
+	text-align: left;
+	color: #000000;
+	font-size: 11px;
+	font-family: helvetica, arial;
+	text-align: left;
+}
+
+.link {
+	color: #b8ccbd;
+	text-decoration: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.icon {
+	padding-right: 5px;
+	width: 20;
+	height: 20;
+	background-size: cover;
+	/* filter: invert(85%) sepia(8%) saturate(1701%) hue-rotate(78deg) brightness(100%) contrast(92%); */
+}
