@@ -19,6 +19,12 @@ td {
 	font-weight: bold;
 }
 
+.vertical-divider {
+	border-left: solid;
+	color: #b8ccbd;
+	border-width: 2px;
+}
+
 .icon {
 	padding-right: 5px;
 	width: 20;
