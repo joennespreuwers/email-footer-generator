@@ -26,8 +26,7 @@ td {
 }
 
 .icon {
-	padding-right: 3px;
-	display: inline-block;
+	padding-right: 3;
 	width: 20;
 	height: 20;
 	/* filter: invert(85%) sepia(8%) saturate(1701%) hue-rotate(78deg) brightness(100%) contrast(92%); */
