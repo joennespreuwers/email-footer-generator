@@ -1,61 +1,122 @@
-<link rel="stylesheet" href="styles.css" />
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Email Footer Generator</title>
+		<link rel="stylesheet" href="./stylesheets/styles.css" />
+		<link rel="stylesheet" href="./stylesheets/background.css" />
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<div id="stars"></div>
+	<div id="stars2"></div>
+	<div id="stars3"></div>
+	<body>
+		<div class="wrapper">
+			<div class="div1 bbod">
+				<h1>Email footer generator</h1>
+			</div>
 
-<table width="500" cellspacing="0" cellpadding="0" border="0">
-	<tr>
-		<!-- Logo -->
-		<td width="200" style="vertical-align: top; padding-right: 12px">
-			<a style="display: inline-block" href="https://www.teherbestemmen.be"
-				><img
-					style="border: none"
-					width="200"
-					src="https://github.com/joennespreuwers/email-footer-generator/blob/master/logos/teherbestemmen.png?raw=true"
-			/></a>
-		</td>
+			<div class="div2 bbod">
+				<div class="layout bbod">
+					<label for="fname">First Name:</label>
+					<input type="text" id="fname" name="fname" placeholder="John" />
+				</div>
+				<div class="layout bbod">
+					<label for="lname">Last Name:</label>
+					<input type="text" id="lname" name="lastname" placeholder="Smith" />
+				</div>
+				<div class="layout bbod">
+					<label for="title">Title:</label>
+					<input type="text" id="title" name="title" placeholder="CEO" />
+				</div>
+				<div class="layout bbod">
+					<label for="phone">Phone number:</label>
+					<input type="text" id="phone" name="phone" placeholder="+1 234 567 890" />
+				</div>
+				<div class="layout bbod">
+					<label for="company">Company:</label>
+					<input id="myInput" type="text" id="company" name="company" placeholder="Company" />
+				</div>
+				<div class="layout bbod">
+					<label for="street">Street:</label>
+					<input type="text" id="street" name="street" placeholder="Street 10" />
+				</div>
+				<div class="layout bbod">
+					<label for="city">City:</label>
+					<input type="text" id="city" name="city" placeholder="New-York" />
+				</div>
+				<div class="layout bbod">
+					<label for="maps-link">Maps link:</label>
+					<input type="text" id="maps-link" name="maps-link" placeholder="https://maps.google.com" />
+				</div>
+				<!-- Socials -->
+				<div class="layout bbod">
+					<label for="website-alt">Website alt:</label>
+					<input type="text" id="website-alt" name="website-alt" placeholder="www.website.com" />
+				</div>
+				<div class="layout bbod">
+					<label for="website-link">Website link:</label>
+					<input type="text" id="website-link" name="website-link" placeholder="https://www.website.com/" />
+				</div>
+				<div class="layout bbod">
+					<label for="alt-text">Alt text:</label>
+					<input type="text" id="alt-text" name="alt-text" placeholder="This is some alt text" />
+				</div>
+				<button type="button" onclick="click()">CLICK</button>
+			</div>
 
-		<!-- Border -->
-		<td width="11" class="vertical-divider"></td>
+			<div class="div3 bbod">
+				<h2>HTML Preview</h2>
+			</div>
 
-		<!-- Info -->
-		<td>
-			<!-- Name -->
-			<span class="bold">Nathalie Amorosi</span><br />
-			<span>BIV</span><br />
-			<a href="tel:+32 472 55 38 93" class="link">+32 472 55 38 93</a><br />
-			<br />
+			<div class="div4 bbod preview">
+				<iframe id="iframe" src="assets/template.html" height="350" width="550" scrolling="no" frameborder="0"></iframe>
+			</div>
 
-			<!-- Company Name -->
-			<span class="bold">Teherbestemmen BV</span><br />
-			<a href="https://goo.gl/maps/8kC5fhR8wdzn5MRE9" class="link">Sluisstraat 79<br />Leuven</a><br />
-			<br />
-			<br />
-			<br />
-			<br />
+			<div class="div5 bbod">
+				<h2>down right div</h2>
+			</div>
+		</div>
+	</body>
+</html>
 
-			<!-- Socials -->
-			<table cellpadding="0" cellpadding="0" border="0">
-				<td id="facebook" class="icon">
-					<a href="https://www.facebook.com/teherbestemmen.be/">
-						<img
-							src="https://github.com/joennespreuwers/email-footer-generator/blob/master/assets/facebook.png?raw=true" />
-					</a>
-				</td>
-				<td id="linkedin" class="icon">
-					<a href="https://www.linkedin.com/in/teherbestemmen-bv-teherbestemmen-6a781422b/">
-						<img
-							src="https://github.com/joennespreuwers/email-footer-generator/blob/master/assets/linkedin.png?raw=true" />
-					</a>
-				</td>
-				<td id="instagram" class="icon">
-					<a href="https://www.instagram.com/missmiyagi.eu/">
-						<img
-							src="https://github.com/joennespreuwers/email-footer-generator/blob/master/assets/instagram.png?raw=true" />
-					</a>
-				</td>
-			</table>
+<!-- <div class="div1">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="firstname" placeholder="John" />
+</div>
+<div class="div2">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="firstname" placeholder="John" />
+</div>
+<div class="div3">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="firstname" placeholder="John" />
+</div>
+<div class="div4">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="firstname" placeholder="John" />
+</div>
+<div class="div5">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="firstname" placeholder="John" />
+</div>
+<div class="div6">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="firstname" placeholder="John" />
+</div>
+<div class="div7">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="firstname" placeholder="John" />
+</div>
+<div class="div8">
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="firstname" placeholder="John" />
+</div>
 
-			<!-- Misc -->
-			<a href="https://www.teherbestemmen.be/" class="link">www.teherbestemmen.be</a><br />
-			<span class="link">BE 0777.727.984 - RPR Leuven</span><br />
-		</td>
-	</tr>
-</table>
+
+<div class="div3">
+				
+			</div>
+-->
