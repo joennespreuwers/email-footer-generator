@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	height: 100%;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grid */
+.wrapper {
+	display: grid;
+	/* border-style: solid; */
+	/* border-color: red; */
+
+	grid-template-columns: repeat(2, 20%) 1fr 40%;
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 10px;
+	height: 99%;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 2 / 3;
+}
+.div2 {
+	grid-area: 2 / 1 / 4 / 3;
+}
+.div3 {
+	grid-area: 1 / 4 / 2 / 5;
+}
+.div4 {
+	grid-area: 2 / 4 / 3 / 5;
+}
+.div5 {
+	grid-area: 3 / 4 / 4 / 5;
+}
+
+/* =========================================================================================== */
+
+/* Fix labels above input field + css of input */
+.layout {
+	display: inline-block;
+	margin: 0;
+	width: 48%;
+}
+
+input[type="text"],
+select {
+	width: 100%;
+	padding: 12px 15px;
+	margin: 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.preview {
+	display: flex;
+	justify-content: flex-start;
+	background: white;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	box-shadow: -5px 5px 15px 5px rgba(0, 0, 0, 0.425);
+	overflow: hidden;
+}
+
+/* .bbod {
+	border-style: solid;
+	margin: 0;
+	border-color: blue;
+} */
+
+.link {
+	color: #72d6ba;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.link:hover {
+	cursor: pointer;
+}

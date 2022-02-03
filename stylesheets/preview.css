@@ -1,0 +1,34 @@
+span,
+a,
+p,
+td {
+	vertical-align: top;
+	text-align: left;
+	color: #000000;
+	font-size: 11px;
+	font-family: helvetica, arial;
+	text-align: left;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.link {
+	color: #72d6ba;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.vertical-divider {
+	border-left: solid;
+	color: #72d6ba;
+	border-width: 2px;
+}
+
+.icon {
+	padding-right: 3;
+	width: 20;
+	height: 20;
+	/* filter: invert(85%) sepia(8%) saturate(1701%) hue-rotate(78deg) brightness(100%) contrast(92%); */
+}

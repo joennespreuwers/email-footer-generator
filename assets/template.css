@@ -10,13 +10,14 @@ td {
 	text-align: left;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .link {
 	color: #72d6ba;
 	text-decoration: none;
-}
-
-.bold {
-	font-weight: bold;
+	cursor: pointer;
 }
 
 .vertical-divider {
